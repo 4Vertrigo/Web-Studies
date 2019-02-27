@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<title>LOTTUS PARKING</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="24 hour parking - model business">
+	<meta name="keywords" content="parking, 24 hour, car, motocycle, center city">
+	<meta name="author" content="Jonas Wendel">
+	<meta name="robots" content="index, follow">
+	
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+</head>	
+<body>
+	<header>
+		<!--it makes possible put text on image side-->
+		<div class="clearfix">
+			<img src="img/logo.svg" alt="24 hour parking - Logo" id="logo">
+			
+			<p id="title"><strong>LOTTUS PARKING</strong></p>
+			<p id="slogan">your veicule, our responsability</p>
+		
+			<nav>
+				<a href="#" id="menu-icon"></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="plans.html">Plans</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li style="float: right"><a href="login.html" class="active">Login</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		<h1 class="subtitles">Login</h1>
+		<section class="login-forms">
+			<h2 class="microtitle">Enter</h2>
+			<form action="/login/" method="POST">
+				<label for="email" class="label">E-mail</label>
+				<input type="email" name="email" id="email" placeholder="E-mail" class="form" required="required">
+					
+				<br><br>
+				
+				<label for="password" class="label">E-mail</label>
+				<input type="password" name="password" id="password" placeholder="password" class="form" required="required">
+					
+				<br><br>
+				
+				<p id="forget">Did you forget your password? <a href="#">Click here!</a></a></p>
+				
+				<br><br>
+				
+				<button type="submit" class="more-info" id="login-normal">Enter</button>
+				
+				<br><br><br>
+				
+			</form>
+			<button class="more-info" id="facebook"><span id="facebook-icon">Enter with your facebook</span></button>
+				
+			<br><br>
+		</section>
+		
+		<hr><br>
+			
+		<form action="/sing-in/" method="POST">
+			<section class="login-forms">
+				<h2 class="microtitle">First time here? Sign in!</h2>
+				
+				<label for="namer" class="label">Register name</label>
+				<input type="text" name="namer" id="namer" placeholder="Name" class="form" required="required">
+					
+				<br><br>
+					
+				<label for="addressr" class="label">Address register</label>
+				<input type="text" name="addressr" id="addressr" placeholder="Address" class="form" required="required">
+				
+				<br><br>
+				
+				<label for="emailr" class="label">E-mail register</label>
+				<input type="email" name="emailr" id="emailr" placeholder="E-mail" class="form" required="required">
+				
+				<br><br>
+				
+				<label for="passwordr" class="label">Password register</label>
+				<input type="password" name="passwordr" id="passwordr" placeholder="Password" class="form" required="required">
+				
+				<br><br>
+				
+				<div class="clearfix">
+					<label for="bdayr" class="label">Birtday register</label>
+					<input type="date" name="bdayr" id="bdayr" placeholder="Birtday" class="form" required="required">
+				
+					<input type="checkbox" id="checkbox"><span id="confirmation">By clicking on the confirmation box, you agree to the company policies quoted in the <a href="#">conduct manual.</a></span>
+				</div>				
+			</section>
+			
+			<br><hr><br>
+			
+			<section class="login-forms">
+				
+				<h2 class="microtitle">Card date</h2>
+				<label for="tnamer" class="label">Titular Name</label>
+				<input type="text" name="tnamer" id="tnamer" placeholder="Titular name" class="form" required="required">
+					
+				<br><br>
+					
+				<label for="numberr" class="label">Card number</label>
+				<input type="number" name="numberr" id="numberr" placeholder="Card number" class="form" required="required">
+					
+				<br><br>
+					
+				<label for="secury-coder" class="label">Secury code</label>
+				<input type="number" name="secury-coder" id="secury-coder" placeholder="Secury code" class="form" required="required">
+					
+				<br><br>
+					
+				<div class="clearfix">
+					<label for="expirationr" class="label">Expiration</label>
+					<input type="month" name="expirationr" id="expirationr" placeholder="Expiration date" class="form" required="required">
+						
+					<button type="submit" class="more-info" id="signrc">Sign in</button>
+				</div>	
+					
+				<br><br>
+			</section>
+		</form>	
+	</main>
+	
+	<footer>
+		<div class="clearfix">
+			<section id="social">
+				<h2 class="microtitle" id="social-title">Find us on social networks</h2>
+				<p><strong>LOTTUS PARKING</strong></p>
+				<br>
+				<a href="#" class="twitter"><b>@LOTTUSPARKING</b></a>
+			</section>
+			<section id="address">
+				<h2 class="microtitle" id="address-title">Where we are?</h2>
+				<address>
+					<b>
+						37 E. Victoria St<br>
+						Santa Barbara | California<br>
+						93101
+					</b>
+				</address>
+				<p>© Copyright - All rights reserved | Created by Jonas Wendel</p>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>

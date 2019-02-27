@@ -1,90 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>	
-	<title>24 hour parking - contact</title>
+	<title>LOTTUS PARKING</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="24 hour parking - contact">
-	<meta name="keywords" content="parking, 24 hour, car, motocycle, center city, contact">
+	<meta name="description" content="24 hour parking - model business">
+	<meta name="keywords" content="parking, 24 hour, car, motocycle, center city">
 	<meta name="author" content="Jonas Wendel">
 	<meta name="robots" content="index, follow">
+	
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="shortcut icon" type="image/png" href="img/icon.png"/>
 </head>	
 <body>	
 	<header>
-		<img src="img/logo.svg" alt="24 hour parking - Logo" width="100" height="100">
-		<p id="logo">24 hour parking</p>
-		<p>your car, our responsability</p>
+		<!--it makes possible put text on image side-->
+		<div class="clearfix">
+			<img src="img/logo.svg" alt="24 hour parking - Logo" id="logo">
+			
+			<p id="title"><strong>LOTTUS PARKING</strong></p>
+			<p id="slogan">your veicule, our responsability</p>
+		
+			<nav>
+				<a href="#" id="menu-icon"></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="plans.html">Plans</a></li>
+					<li><a href="contact.html" class="active">Contact</a></li>
+					<li style="float: right"><a href="login.html">Login</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="services.html">Services</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="plans.html">Plans</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
-	
 	<main>
-		<h1>Contact us!</h1>
+		<h1 class="subtitles">Contact us!</h1>
 		
-		<section id="contact">
-			<h2>Type your doubts</h2>
-			<form action="/contact/" method="POST">
-				<label for="name">Name</label>
-				<input type="text" name="name" id="name" placeholder="Type your name here">
+		<div class="clearfix">
+			<section id="contact">
+				<h2 class="microtitle">Type your doubts</h2>
+				<form action="/contact/" method="POST">
+					
+					<label for="email" class="label">E-mail</label>
+					<input type="email" name="email" id="email" placeholder="E-mail" class="form" required="required">
 				
-				<br>
-				
-				<label for="email">E-mail</label>
-				<input type="email" name="email" id="email" placeholder="Type your email here">
-				
-				<br>
-				
-				<label for="cellphone">Cellphone</label>
-				<input type="text" name="cellphone" id="cellphone" placeholder="Type your cellphone here">
-				
-				<br>
-				
-				<label for="mensage">Mensage</label>
-				<textarea rows="4" cols="50" id="mensage" placeholder="Type your mensage here"></textarea>
-				
-				<br>
-				
-				<button type="submit">Send</button>
-			</form>
-
-		</section>
-		
-		<hr>
-		
-		<section>
-			<h2>More info about contact</h2>
+					<br><br>
+					
+					<label for="name" class="label">Name</label>
+					<input type="text" name="name" id="name" placeholder="Name" class="form" required="required">
+					
+					<label for="last-name" class="label">Last Name</label>
+					<input type="text" name="last-name" id="last-name" placeholder="Last Name" class="form" required="required">
+					
+					<br><br>
+					
+					<label for="mensage" class="label">Mensage</label>
+					<textarea rows="4" cols="50" id="mensage" placeholder="Type your mensage here" class="form" required="required"></textarea>
+					
+					<br><br>
+					
+					<button type="submit" class="more-info" id="bug3">Send</button>
+				</form>
+			</section>
 			
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-		
-			<div id="image2">
-				<img src="img/parking.jpg" alt="Parking picture" width="600" height="400">
-			</div>
-		</section>
+			<section id="more-info">
+				<h2 class="microtitle">More info about contact</h2>
+				
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				<br><br>
+				<div id="image5">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.1378404211714!2d-119.7087945847751!3d34.423253680506626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e9147d431f57ff%3A0x6a209cf106d19cb8!2s37+W+Victoria+St%2C+Santa+Barbara%2C+CA+93101%2C+EUA!5e0!3m2!1spt-BR!2sbr!4v1550764793861"  width="600" height="450" allowfullscreen id="image5-content"></iframe>
+					<br><br>
+				</div>
+			</section>
+		</div>
 	</main>
 	
 	<footer>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="plans.html">Plans</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-		
-		<section id="copyright">
-			<h2>Rights</h2>
-			<p>Copyright - All rights reserved | Created by Jonas Wendel</p>
-		</section>
+		<div class="clearfix">
+			<section id="social">
+				<h2 class="microtitle" id="social-title">Find us on social networks</h2>
+				<p><strong>LOTTUS PARKING</strong></p>
+				<br>
+				<a href="#" class="twitter"><b>@LOTTUSPARKING</b></a>
+			</section>
+			<section id="address">
+				<h2 class="microtitle" id="address-title">Where we are?</h2>
+				<address>
+					<b>
+						37 E. Victoria St<br>
+						Santa Barbara | California<br>
+						93101
+					</b>
+				</address>
+				<p>© Copyright - All rights reserved | Created by Jonas Wendel</p>
+			</section>
+		</div>
 	</footer>
 </body>
 </html>

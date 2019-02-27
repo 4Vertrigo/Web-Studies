@@ -1,0 +1,830 @@
+@font-face {
+  font-family: above;
+  src: url('../fonts/above.ttf');
+}
+
+body{
+	margin: 0px;
+}
+
+hr{
+	width: 90%;
+	height: 2px;
+	background: #DCD0C0;
+	border: 3px solid #C0B283;
+	border-radius: 5px;
+	box-shadow: 0px 3px #373737;
+}
+
+header{
+	background-color: #DCD0C0;
+	width: 100%;
+}
+
+footer{
+	background-color: #DCD0C0;
+	width: 100%;
+}
+
+footer p{
+	margin-bottom:0;
+}
+
+ul{
+	list-style-type: none;
+	position: sticky;
+	width: 100%;
+	padding: 0px;
+	overflow: hidden;	
+	border-top: solid 2px #373737;
+	border-bottom: solid 2px #373737;
+	top: 0;
+	background: #DCD0C0;
+	margin: 0px;
+	text-align: center;
+}
+
+li{
+	float: left;
+	border-right: solid 2px #373737;
+}
+
+li:last-child{
+	border-left: solid 2px #373737;
+	border-right: none;
+}
+
+nav a{
+	display: block;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 2em;
+	padding-left: 2em;
+	color: #373737;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.25em;
+	cursor: default;
+	font-family: above;
+}
+
+nav a:hover:not(.active){
+	color: #F4F4F4;
+	background: #C0B283;
+	cursor: pointer;	
+}
+
+address{
+	font-size: 1.2em;
+	
+}
+
+textarea{
+	resize: none;
+	height: 400px;
+}
+
+#checkbox{
+	width: 1.2em;
+	height: 1.2em;
+	margin-left: 2%;
+}
+
+#logo{
+	float: right;
+	width: 30%;
+	height: 30%;
+	margin-right: 5%;
+	display: block
+}
+
+#title{
+	text-indent: 5%;
+	font-family: above;
+}
+
+#slogan{
+	text-align: center;
+	font-style: italic;
+}
+
+#menu-icon{
+	display: none;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: #DCD0C0 url("../img/menu-icon.png") center no-repeat;
+}
+
+#promo1{
+	float: left;
+}
+
+#promo2{
+	float: right;
+}
+
+#index-image{
+	position: relative;
+	width: 95%;
+	border: 8px solid #DCD0C0;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0px 9px #373737;
+}
+
+#index-image:hover{
+	border-color: #C0B283;
+	transition: 1s;
+}
+
+#index-image:active{
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+
+#customers-image{
+	position:relative;
+	width: 100%;
+}
+
+#image1{
+	float: left;
+	width: 40%;
+	margin: 5%;
+}
+
+#image2{
+	float: right;
+	width: 40%;
+	margin: 5%;
+}
+
+#image3{
+	float: right;
+	width: 40%;
+	margin: 5%;
+	margin-top: 0;
+}
+
+#image4{
+	float: right;
+	width: 40%;
+	margin: 5%;
+	margin-top: 0;
+}
+
+#image5{
+	width: 80%;
+	display: block;
+	margin: auto;
+	height: 500px;
+}
+
+#decla-customers{
+	border: 2px solid #373737;
+	margin-bottom: 10%;
+}
+
+#address-title:before{
+	content: " " url("../img/localization-icon.png");
+}
+
+#galery-button-right:after{
+	content: " " url("../img/right-icon.png");
+}	
+
+#galery-button-left:before{
+	content: " " url("../img/left-icon.png");
+}
+
+#services{
+	font-size: 1.2em;
+	text-align: justify;
+	margin: 3%;
+	background: #F4F4F4;
+	box-shadow: 10px 10px #373737;
+	border-radius: 10px;
+	padding: 1%;
+}
+
+#contact{
+	width: 40%;
+	margin: 3%;
+	float: left;
+}
+
+#name{
+	display: inline;
+	width: 49%;
+}
+
+#last-name{
+	display: inline;
+	width: 49%;
+}
+
+#more-info{
+	float: right;
+	width: 42%;
+	font-size: 1.2em;
+	text-align: justify;
+	margin: 4%;
+	margin-top: 0;
+	box-shadow: 10px 10px #373737;
+	background: #f4f4f4;
+	border-radius: 10px;
+	padding: 1%;
+}
+
+#forget{
+	text-align: center;
+	color: #373737;
+	font-size: 1.2em;
+}
+
+#forget a{
+	text-decoration: none;
+	color: #373737;
+}
+
+#facebook{
+	background: #4169E1;
+	font-size: 1em;
+}
+
+#facebook:hover{
+	background: #0000FF;
+}
+
+#facebook-icon:after{
+	content: " " url("../img/facebook-logo.png");
+}
+
+#login-normal{
+	font-size: 1em;
+}
+
+#bdayr{
+	width: 45%;
+	float: left;
+}
+
+#expirationr{
+	width: 45%;
+	float: left;
+}
+
+#signrc{
+	width: 45%;
+	float: right;
+	margin: 0;
+	font-size: 1em;
+}
+
+#confirmation{
+	font-size: 1em;
+	float: right;
+	width: 50%;
+}
+
+#confirmation a{
+	text-decoration: none;
+	color: blue;
+}
+
+[id$="content"]{
+	width: 92%;
+	position: relative;
+	border: 8px solid #C0B283;
+	border-radius: 10px;
+}
+
+[id ^="promo"]{
+	width: 35%;
+	margin: 5%;
+	padding: 2%;
+	font-size: 1.2em;
+	text-align: justify;
+	border-radius: 10px;
+	margin: 3%;
+	box-shadow: 10px 10px #373737;
+	background: #F4F4F4;
+}
+
+[id ^="promo"]:hover{
+	cursor: pointer;
+	background: #C0B283;
+	transition: 0.9s;
+	border-radius: 30px;
+}
+
+[id ^="promo"]:active{
+	box-shadow: 5px 5px #666;
+	transform: translateX(5px);
+}
+
+[id ^="general"]{
+	float: left;
+	width: 29.33%;
+	font-size: 1.2em;
+	text-align: justify;
+	margin: 2%;
+}
+
+[id ^="decla"]{
+	float: left;
+	text-align: justify;
+	font-size: 1.2em;
+	width: 27%;
+	margin: 3%;
+}
+
+[id$="none"]{
+	display: none;
+}
+
+.clearfix{
+	overflow:auto;
+}
+
+.active{
+	background-color: #373737;
+	color: #F4F4F4;
+}
+
+.subtitles{
+	text-align: center;
+	font-size: 3em;
+	font-family: above;
+	color: #C0B283;
+	background: #F4F4F4
+}
+
+.subtitles:after{
+	content: " " url("../img/icon.png");
+}
+
+.microtitle{
+	font-family: above;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.more-info{
+	margin-left: 20%;
+	width: 60%;
+	height: 40px;
+	margin-right: 20%;
+	background: #DCD0C0;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-family: above;
+	box-shadow: 0 9px #373737;
+	border-radius: 10px;
+}
+
+.more-info:active{
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.more-info:hover{
+	transition: 0.5s;
+	background: #C0B283;
+}
+
+.desc{
+  padding: 15px;
+  text-align: center;
+}
+
+.twitter{
+	color: #373737;
+	text-decoration: none;
+}
+
+.story{
+	text-align: justify;
+	font-size: 1.2em;
+	margin: 2%;
+	box-shadow: 10px 10px #373737;
+	background: #f4f4f4;
+	border-radius: 10px;
+	padding: 1%;
+}
+
+.form{
+	outline: none;
+	width: 100%;
+	border: 3px solid #C0B283;
+	box-sizing: border-box;
+	background: #373737;
+	color: #F4F4F4;
+	padding: 2%;
+	border-radius: 10px;
+	font-family: above;
+}
+
+.form:focus{
+	border-color: #DCD0C0;
+	background: #F4F4F4;
+	color: #373737;
+	transition: 0.5s;
+	box-shadow: 2px 2px 2px 2px #373737
+}
+
+.label{
+	display: none;
+}
+
+.login-forms{
+	display: block;
+	margin: auto;
+	width: 70%;
+}
+
+.test1{
+	width: 45%;
+	float: left;
+}
+
+.test2{
+	width: 45%;
+	float: right;
+	margin: 0;
+	font-size: 1.2em;
+}
+
+/*responsive to mobile devices*/
+@media only screen and (max-width: 925px){
+	
+	nav ul{
+		display: none;
+		position: absolute;
+		top: 100px;
+		left: 0;
+		background: #F4F4F4;
+		width: 40%;
+		border: none;
+		z-index: 1;
+	}
+	
+	nav li{
+		font-size: 0.7em;
+		text-align: center;
+		width: 100%;
+		margin: 0;
+	}
+	
+	nav:hover ul{
+		display: block;
+	}
+	
+	nav li a{
+		color: #373737;
+	}	
+	
+	#menu-icon{
+		display: inline-block;
+		padding: 0;
+		margin-left: 40%;
+	}
+	
+	#title{
+		font-size: 1.35em;
+	}
+	
+	#slogan{
+		font-size: 0.8em;
+	}
+	
+	/*they can't to be choice by a selector because they has specific rules*/
+	#promo1{
+		float: none;
+	}
+	
+	#promo2{
+		float: none;
+	}
+	
+	#right:after{
+		content: " " url("../img/right-icon.png");
+	}	
+
+	#left:before{
+		content: " " url("../img/left-icon.png");
+	}
+	
+	#address{
+		float: none;
+		margin: 2%;
+	}
+	
+	#social{
+		float: none;
+		margin: 2%;
+	}	
+	#social-title:after{
+		content: " ";
+	}
+	
+	#social-title:before{
+		content: " " url("../img/social-icon.png");
+	}
+	
+	#services{
+		width: 80%;
+		margin: auto;
+		margin-bottom: 10%;
+	}
+	
+	#image1{
+		float: none;
+		width: 80%;
+		margin: auto;
+		margin-top: 6%;
+	}
+
+	#image2{
+		float: none;
+		width: 80%;
+		margin: auto;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+	
+	#image3{
+		float: none;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 10%;
+	}
+	
+	#image4{
+		float: none;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 10%;
+	}
+	
+	#contact{
+		width: 80%;
+		margin: auto;
+		margin-bottom: 10%;
+		float: none;
+	}
+	
+	#name{
+		width: 49%;
+	}
+
+	#last-name{
+		width: 49%;
+	}
+
+	
+	#more-info{
+		float: none;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 10%;
+	}
+	
+	#image5{
+		height: 350px;
+	}
+	
+	#image5-content{
+		height: 300px;
+	}
+	
+	#login-normal{
+		font-size: 0.9em;
+	}
+	
+	#facebook{
+		font-size: 0.9em;
+	}
+	
+	#bdayr{
+		width: 100%;
+		float: none;
+		margin-bottom: 5%;
+	}
+			
+	#signrc{
+		display: block;
+		margin: auto;
+		margin-bottom: 5%;
+		width: 60%;
+		float: none;
+		font-size: 0.9em;
+	}
+	
+	#confirmation{
+		font-size: 1.2em;
+		float: none;
+		width: 50%;
+	}
+	
+	#expirationr{
+		width: 100%;
+		float: none;
+		margin-bottom: 5%;
+	}
+
+	[id ^="promo"]{
+		width: 80%;
+		margin-bottom: 5%;
+	}
+	
+	[id ^="general"]{
+		float: none;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 5%;
+		
+	}
+	
+	[id ^="decla"]{
+		float: none;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 0;
+	}
+	
+	[id^="none"]{
+
+		visibility: hidden;
+	}
+	
+	[id$="none"]{
+		display: block;
+		width: 35%;
+		float: left;
+		margin: 0;
+		margin-left: 10%;
+		margin-bottom: 5%;
+	}
+	
+	.microtitle{
+		font-size: 1.5em;
+		text-align: center;
+	}
+	
+	[id$="title"]{
+		text-align: left;
+	}
+	
+	.subtitles{
+		font-size: 2em;
+	}
+	
+	.subtitles:after{
+	content: " " url("../img/icon-small.png");
+	}
+	
+	.story{
+		margin: auto;
+		width: 80%;
+		margin-bottom: 10%;
+		margin-top: 10%;
+	}
+	
+	.login-forms{
+		width: 80%;
+
+	}
+}
+
+/*for phones bigger*/
+@media only screen and (min-width: 510px){
+
+	#title{
+		font-size: 2.3em;
+	}
+
+	#slogan{
+		font-size: 1em;
+	}
+	
+	nav ul{
+		top: 160px;
+	}
+}
+
+/*Sometings that must be like this in most computers*/
+@media only screen and (min-width: 925px){
+
+	#address{
+		float: right;
+		margin: 2%;
+	}
+	
+	#title{
+		font-size: 4em;
+	}
+	
+	#slogan{
+		font-size: 1.2em;
+	}
+
+	#social{
+		float: left;
+		margin: 2%;
+	}
+	
+	#social-title:after{
+		content: " " url("../img/social-icon.png");
+	}	
+	
+	#social-title:before{
+		content: " ";
+	}
+}
+
+/*responsive to televisions*/
+@media only screen and (min-width: 1500px){
+	
+	#title{
+		font-size: 6em;
+	}
+	
+	#slogan{
+		font-size: 2em;
+	}
+	
+	#services{
+		font-size: 1.6em;
+	}
+	
+	#more-info{
+		font-size: 1.4em;
+	}
+	
+	#forget{
+		font-size: 1.6em;
+	}
+	
+	#login-normal{
+		font-size: 1.6em;
+	}
+	
+	#facebook{
+		font-size: 1.6em;
+	}
+	
+	#confirmation{
+		font-size: 1.6em;
+	}
+	
+	#signrc{
+		font-size: 1.6em;
+	}
+	
+	[id^="promo"]{
+		font-size: 1.6em;
+	}
+	
+	[id^="general"]{
+		font-size: 1.6em;
+	}
+	
+	[id^="decla"]{
+		font-size: 1.6em;
+	}
+	
+	nav a{
+		padding-right: 2.4em;
+		padding-left: 2.4em;
+		font-size: 1.65em;
+	}
+	
+	.subtitles{
+		font-size: 5em;
+	}
+	
+	.microtitle{
+		font-size: 2em;
+	}
+	
+	.more-info{
+		font-size: 0.8em;
+		height: 60px;
+	}
+	
+	.story{
+		font-size: 1.6em;
+	}
+	
+	.form{
+		font-size: 1.2em;
+	}
+	
+	[id^="bug"]{
+		font-size: 1.3em;
+	}
+}
