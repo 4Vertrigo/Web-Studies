@@ -1,14 +1,14 @@
 function MyObject() {}
 console.log(MyObject.prototype)
-
 const obj1 = new MyObject
 const obj2 = new MyObject
 console.log(obj1.__proto__ === obj2.__proto__)
 console.log(MyObject.prototype === obj1.__proto__)
 
 MyObject.prototype.name = 'Anonymous'
+
 MyObject.prototype.speak = function() {
-    console.log(`THIS: ${this}`)
+    console.log(this == module.exports)
     console.log(`Hello there! My name is ${this.name}!`)
 }
 
